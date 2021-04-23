@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="main">
+        <div class="calculator">
+            <input type="text" name="screen" id="result">
+            <table>
+                <tr>
+                    <td><button onclick="clr()" style="color: rgb(160, 4, 121)">C</button></td>
+                    <td><button class="fontcolor" onclick="back()">DEL</button></td>
+                    <td><button  class="fontcolor" onclick="dis('/')">/</button></td>
+                    <td><button  class="fontcolor" onclick="dis('%')">%</button></td>
+                </tr>
+                <tr>
+                    <td><button  onclick="dis('8')">8</button></td>
+                    <td><button  onclick="dis('7')">7</button></td>
+                    <td><button  onclick="dis('9')">9</button></td>
+                    <td><button  class="fontcolor" onclick="dis('*')">x</button></td>
+                </tr>
+                <tr>
+                    <td><button  onclick="dis('4')">4</button></td>
+                    <td><button  onclick="dis('5')">5</button></td>
+                    <td><button  onclick="dis('6')">6</button></td>
+                    <td><button  class="fontcolor" onclick="dis('-')">-</button></td>
+                </tr>
+                <tr>
+                    <td><button  onclick="dis('1')">1</button></td>
+                    <td><button  onclick="dis('2')">2</button></td>
+                    <td><button  onclick="dis('3')">3</button></td>
+                    <td><button  class="fontcolor" onclick="dis('+')">+</button></td>
+                </tr>
+                <tr>
+                    <td><button  onclick="dis('0')">0</button></td>
+                    <td><button  onclick="dis('00')">00</button></td>
+                    <td><button  onclick="dis('.')">.</button></td>
+                    <td><button  onclick="solve()" style="color: rgb(55, 12, 112);">=</button></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
